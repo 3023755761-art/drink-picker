@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/drink-picker/',
+  base: process.env.BASE_PATH || '/',
   plugins: [vue()],
 })
